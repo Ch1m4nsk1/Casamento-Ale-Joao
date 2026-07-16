@@ -8,4 +8,6 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  base: {
+  "homepage": "Casamento-Ale-Joao"
 })
