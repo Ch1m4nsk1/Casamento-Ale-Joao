@@ -23,7 +23,7 @@
 .nav-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #00CC66;
+  color: #458064;
 }
 
 .nav-menu {
@@ -41,7 +41,7 @@
 }
 
 .nav-menu a:hover {
-  color: #00CC66;
+  color: #458064;
 }
 
 @media (max-width: 768px) {
@@ -66,7 +66,7 @@
   right: 10%;
   width: 300px;
   height: 300px;
-  background: #00CC66;
+  background: #458064;
   border-radius: 50%;
   opacity: 0.1;
   filter: blur(80px);
@@ -78,7 +78,7 @@
   left: 10%;
   width: 300px;
   height: 300px;
-  background: #80FFBF;
+  background: #458064;
   border-radius: 50%;
   opacity: 0.1;
   filter: blur(80px);
@@ -99,12 +99,12 @@
 }
 
 .ampersand {
-  color: #00CC66;
+  color: #458064;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: #666;
+  color: #777;
   margin-bottom: 2rem;
   font-weight: 300;
 }
@@ -142,7 +142,7 @@
 }
 
 .countdown-number {
-  background: #00CC66;
+  background: #458064;
   color: white;
   width: 80px;
   height: 80px;
@@ -156,7 +156,7 @@
 
 .countdown-label {
   font-size: 0.8rem;
-  color: #666;
+  color: #777;
   margin-top: 0.5rem;
 }
 
@@ -197,7 +197,7 @@
 
 .casal-content p {
   margin-bottom: 1.5rem;
-  color: #666;
+  color: #777;
   font-size: 1.1rem;
 }
 
@@ -220,11 +220,11 @@
 .cerimonia-card h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #00CC66;
+  color: #458064;
 }
 
 .cerimonia-card p {
-  color: #666;
+  color: #777;
   margin-bottom: 0.5rem;
 }
 
@@ -246,12 +246,12 @@
   border: 1px solid #E8E8E0;
   text-align: center;
   font-size: 1.2rem;
-  color: #666;
+  color: #777;
 }
 
 .festa-card h3 {
   font-size: 1.5rem;
-  color: #00CC66;
+  color: #458064;
   margin-bottom: 1rem;
   font-family: 'Playfair Display', serif;
 }
@@ -263,7 +263,7 @@
 /* Presentes Section */
 .presentes-intro {
   text-align: center;
-  color: #666;
+  color: #777;
   margin-bottom: 2rem;
 }
 
@@ -314,13 +314,13 @@
 .presente-nome {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #00CC66;
+  color: #458064;
   margin-bottom: 0.5rem;
 }
 
 .presente-descricao {
   font-size: 0.85rem;
-  color: #666;
+  color: #777;
   font-style: italic;
 }
 
@@ -359,13 +359,13 @@
   border-top: 1px solid #E8E8E0;
   padding: 2rem;
   text-align: center;
-  color: #666;
+  color: #777;
 }
 
 .footer-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #00CC66;
+  color: #458064;
   margin-bottom: 0.5rem;
 }
 
@@ -383,7 +383,7 @@
 }
 
 .modal-description {
-  color: #666;
+  color: #777;
   margin-bottom: 1.5rem;
   font-style: italic;
 }
