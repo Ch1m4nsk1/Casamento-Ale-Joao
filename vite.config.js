@@ -9,5 +9,5 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] })
   ],
   base: {
-  "homepage": "Casamento-Ale-Joao"
+  "homepage": "/Casamento-Ale-Joao"
 })
