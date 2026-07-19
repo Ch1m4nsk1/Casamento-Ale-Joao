@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from '../components/Dialog'
 import './Home.css'
-import imagem0 from './assets/Imagem-0.jpeg'
+// import imagem0 from "./assets/Imagem-0.jpeg";
 
 const presentes = [
   {
@@ -194,7 +194,7 @@ export default function Home() {
           {/* Foto Grande */}
           <div className="hero-image">
             <img 
-              src="{Imagem0}" 
+              src="/assets/Imagem-0.jpeg" 
               alt="Alexandra & João"
             />
           </div>
