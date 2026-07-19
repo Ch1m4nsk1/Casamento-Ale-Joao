@@ -194,7 +194,7 @@ export default function Home() {
           {/* Foto Grande */}
           <div className="hero-image">
             <img 
-              src="public\assets\Imagem-0.jpeg" 
+              src="/assets/Imagem-0.jpeg" 
               alt="Alexandra & João"
             />
           </div>
