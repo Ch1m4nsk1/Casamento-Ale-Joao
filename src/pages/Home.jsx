@@ -1,136 +1,120 @@
 import { useEffect, useState } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from '../components/Dialog'
 import './Home.css'
-// import imagem0 from "./assets/Imagem-0.jpeg";
+
+const baseUrl = import.meta.env.BASE_URL
+const getAsset = (assetPath) => `${baseUrl}${assetPath}`
 
 const presentes = [
   {
     id: 1,
     nome: 'Vitrola',
     descricao: 'Para o noivo continuar dizendo que é item de colecionador',
-    imagem: '/assets/vitrola.webp',
   },
   {
     id: 2,
     nome: 'PlayStation 5',
     descricao: 'Para deixar parado porque ninguem tem tempo de jogar',
-    imagem: '/assets/playstation5.webp',
   },
   {
     id: 3,
     nome: 'Panela Le Creuset',
     descricao: 'Porque miojo gourmet também merece respeito',
-    imagem: '/assets/panela-lecreuset.webp',
   },
   {
     id: 4,
     nome: 'Ataque do Tubarão',
     descricao: 'Para as crianças',
-    imagem: '/assets/ataque-tubarao.webp',
   },
   {
     id: 5,
     nome: 'Kit Wella 1L',
     descricao: 'Porque casar é dividir a vida… e os produtos caros do banheiro',
-    imagem: '/assets/kit-wella.webp',
   },
   {
     id: 6,
     nome: 'Cobertor',
     descricao: 'Um cobertor quentinho para uma tarde de filmes',
-    imagem: '/assets/cobertor.webp',
   },
   {
     id: 7,
     nome: 'Piquenique',
     descricao: 'Para uma tarde romântica no parque',
-    imagem: '/assets/piquenique.webp',
   },
   {
     id: 8,
     nome: 'Lua de Mel',
     descricao: 'Ajude os recém-casados a viverem sua fase blogueirinhos de viagem',
-    imagem: '/assets/lua-de-mel.webp',
   },
   {
     id: 9,
     nome: 'Batedeira',
     descricao: 'Não precisa ser a KitchenAid, mas seria legal ter uma um dia',
-    imagem: '/assets/batedeira.webp',
   },
   {
     id: 10,
     nome: 'Jogo de Jantar',
     descricao: 'Para receber visitas como adultos funcionais',
-    imagem: '/assets/jogo-jantar.webp',
   },
   {
     id: 11,
     nome: 'Mesa de Jantar',
     descricao: 'Onde acontecerão cafés, risadas e fofocas',
-    imagem: '/assets/mesa-jantar.webp',
   },
   {
     id: 12,
     nome: 'Sofá',
     descricao: 'Para maratonar séries até alguém dormir primeiro',
-    imagem: '/assets/sofa.webp',
   },
   {
     id: 13,
     nome: 'Tapete Persa',
     descricao: 'Para o apartamento parecer rica sem precisar ser',
-    imagem: '/assets/tapete-persa.webp',
   },
   {
     id: 14,
     nome: 'Cortinas Elegantes',
     descricao: 'Para os vizinhos não acompanharem a rotina do casal',
-    imagem: '/assets/cortinas.webp',
   },
   {
     id: 15,
     nome: 'Luminária Moderna',
     descricao: 'Para criar aquele clima Pinterest em casa',
-    imagem: '/assets/luminaria.webp',
   },
   {
     id: 16,
     nome: 'Jogo de Louça',
     descricao: 'Para impressionar nas refeições e pedir pizza no prato chique',
-    imagem: '/assets/jogo-louca.webp',
   },
   {
     id: 17,
     nome: 'Talheres de Prata',
     descricao: 'Porque comer arroz e feijão também pode ser sofisticado',
-    imagem: '/assets/talheres.webp',
   },
   {
     id: 18,
     nome: 'Copos de Cristal',
     descricao: 'Para brindar quando o salário cair na conta',
-    imagem: '/assets/copos-cristal.webp',
   },
   {
     id: 19,
     nome: 'Jogo de Banho',
     descricao: 'Para transformar o banho num mini spa de apartamento',
-    imagem: '/assets/jogo-banho.webp',
   },
   {
     id: 20,
     nome: 'Carro',
     descricao: 'Não custa nada sonhar, né?',
-    imagem: '/assets/carro.webp',
   },
-    {
+  {
     id: 21,
     nome: 'Sua opção de presente',
     descricao: 'O que seu coração mandar. (Fale com os noivos)',
-    imagem: '/assets/sua-opcao.webp',
   },
-]
+].map((presente, index) => ({
+  ...presente,
+  imagem: getAsset(`assets/Imagem-${(index % 4)}.jpeg`),
+}))
 
 export default function Home() {
   const [countdown, setCountdown] = useState({ dias: 0, horas: 0, minutos: 0, segundos: 0 })
@@ -194,7 +178,7 @@ export default function Home() {
           {/* Foto Grande */}
           <div className="hero-image">
             <img 
-              src="/assets/Imagem-0.jpeg" 
+              src={getAsset('assets/Imagem-0.jpeg')} 
               alt="Alexandra & João"
             />
           </div>
@@ -300,13 +284,13 @@ export default function Home() {
           <h2 className="section-title font-playfair">Galeria de Fotos</h2>
           <div className="galeria-grid">
             <div className="galeria-item">
-              <img src="assets/foto-galeria-1.webp" alt="Galeria 1" />
+              <img src={getAsset('assets/Imagem-1.jpeg')} alt="Galeria 1" />
             </div>
             <div className="galeria-item">
-              <img src="assets/foto-galeria-2.webp" alt="Galeria 2" />
+              <img src={getAsset('assets/Imagem-2.jpeg')} alt="Galeria 2" />
             </div>
             <div className="galeria-item">
-              <img src="assets/foto-galeria-3.webp" alt="Galeria 3" />
+              <img src={getAsset('assets/Imagem-3.jpeg')} alt="Galeria 3" />
             </div>
           </div>
         </div>
