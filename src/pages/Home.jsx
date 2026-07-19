@@ -193,7 +193,7 @@ export default function Home() {
           {/* Foto Grande */}
           <div className="hero-image">
             <img 
-              src="assets/foto-grande-Ale-Joao.webp" 
+              src="assets/Imagem-0.png" 
               alt="Alexandra & João"
             />
           </div>
