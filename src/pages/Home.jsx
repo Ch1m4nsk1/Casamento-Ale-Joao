@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from '.
 import './Home.css'
 
 const baseUrl = import.meta.env.BASE_URL
-const getAsset = (assetPath) => `${baseUrl}${assetPath}`
+// const getAsset = (assetPath) => `${baseUrl}${assetPath}`
 
 const presentes = [
   {
@@ -153,7 +153,7 @@ export default function Home() {
           {/* Foto Grande */}
           <div className="hero-image">
             <img 
-              src={getAsset('/src/assets/Imagem-0.jpeg')} 
+              src={getAsset('https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-0.jpeg?raw=true')} 
               alt="Alexandra & João"
             />
           </div>
@@ -250,13 +250,13 @@ export default function Home() {
           <h2 className="section-title font-playfair">Galeria de Fotos</h2>
           <div className="galeria-grid">
             <div className="galeria-item">
-              <img src={getAsset('/src/assets/Imagem-1.jpeg')} alt="Galeria 1" />
+              <img src={getAsset('https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-1.jpeg?raw=true')} alt="Galeria 1" />
             </div>
             <div className="galeria-item">
-              <img src={getAsset('/src/assets/Imagem-2.jpeg')} alt="Galeria 2" />
+              <img src={getAsset('https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-2.jpeg?raw=true')} alt="Galeria 2" />
             </div>
             <div className="galeria-item">
-              <img src={getAsset('/src/assets/Imagem-3.jpeg')} alt="Galeria 3" />
+              <img src={getAsset('https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-3.jpeg?raw=true')} alt="Galeria 3" />
             </div>
           </div>
         </div>
