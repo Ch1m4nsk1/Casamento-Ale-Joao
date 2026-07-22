@@ -153,7 +153,7 @@ export default function Home() {
           {/* Foto Grande */}
           <div className="hero-image">
             <img 
-              src={getAsset('https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-0.jpeg?raw=true')} 
+              src='https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-0.jpeg?raw=true'
               alt="Alexandra & João"
             />
           </div>
