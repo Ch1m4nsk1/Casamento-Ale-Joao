@@ -9,105 +9,80 @@ const presentes = [
   {
     id: 1,
     nome: 'Vitrola',
-    descricao: 'Para o noivo continuar dizendo que é item de colecionador',
+    descricao: 'Para o noivo dizer que é item de colecionador',
   },
   {
     id: 2,
-    nome: 'PlayStation 5',
-    descricao: 'Para deixar parado porque ninguem tem tempo de jogar',
+    nome: 'Conjunto de Panelas',
+    descricao: 'Para receber os convidados com ótimas comidinhas',
   },
   {
     id: 3,
-    nome: 'Panela Le Creuset',
-    descricao: 'Porque miojo gourmet também merece respeito',
-  },
-  {
-    id: 4,
-    nome: 'Ataque do Tubarão',
-    descricao: 'Para as crianças',
-  },
-  {
-    id: 5,
-    nome: 'Kit Wella 1L',
-    descricao: 'Porque casar é dividir a vida… e os produtos caros do banheiro',
-  },
-  {
-    id: 6,
     nome: 'Cobertor',
     descricao: 'Um cobertor quentinho para uma tarde de filmes',
   },
   {
-    id: 7,
+    id: 4,
     nome: 'Piquenique',
     descricao: 'Para uma tarde romântica no parque',
   },
   {
-    id: 8,
+    id: 5,
     nome: 'Lua de Mel',
-    descricao: 'Ajude os recém-casados a viverem sua fase blogueirinhos de viagem',
+    descricao: 'Ajude os recém-casados a viverem um sonho',
   },
   {
-    id: 9,
+    id: 6,
     nome: 'Batedeira',
     descricao: 'Não precisa ser a KitchenAid, mas seria legal ter uma um dia',
   },
   {
-    id: 10,
+    id: 7,
     nome: 'Jogo de Jantar',
-    descricao: 'Para receber visitas como adultos funcionais',
+    descricao: 'Para receber as visitas com elegância',
   },
   {
-    id: 11,
+    id: 8,
     nome: 'Mesa de Jantar',
     descricao: 'Onde acontecerão cafés, risadas e fofocas',
   },
   {
-    id: 12,
+    id: 9,
     nome: 'Sofá',
-    descricao: 'Para maratonar séries até alguém dormir primeiro',
+    descricao: 'Pro caso das visitas não caberem ao redor da mesa',
+  },
+  {
+    id: 10,
+    nome: 'Cortinas Elegantes',
+    descricao: 'Pra ninguem ficar bisbilhotando a vida alheia',
+  },
+  {
+    id: 11,
+    nome: 'Luminária Moderna',
+    descricao: 'Para criar aquele clima aconchegante em casa',
+  },
+  {
+    id: 12,
+    nome: 'Talheres',
+    descricao: 'Porque não rola comer com as mãos',
   },
   {
     id: 13,
-    nome: 'Tapete Persa',
-    descricao: 'Para o apartamento parecer rica sem precisar ser',
-  },
-  {
-    id: 14,
-    nome: 'Cortinas Elegantes',
-    descricao: 'Para os vizinhos não acompanharem a rotina do casal',
-  },
-  {
-    id: 15,
-    nome: 'Luminária Moderna',
-    descricao: 'Para criar aquele clima Pinterest em casa',
-  },
-  {
-    id: 16,
-    nome: 'Jogo de Louça',
-    descricao: 'Para impressionar nas refeições e pedir pizza no prato chique',
-  },
-  {
-    id: 17,
-    nome: 'Talheres de Prata',
-    descricao: 'Porque comer arroz e feijão também pode ser sofisticado',
-  },
-  {
-    id: 18,
-    nome: 'Copos de Cristal',
+    nome: 'Taças',
     descricao: 'Para brindar quando o salário cair na conta',
   },
   {
-    id: 19,
+    id: 14,
     nome: 'Jogo de Banho',
     descricao: 'Para transformar o banho num mini spa de apartamento',
   },
   {
-    id: 20,
+    id: 15,
     nome: 'Carro',
     descricao: 'Não custa nada sonhar, né?',
   },
   {
-    id: 21,
+    id: 16,
     nome: 'Sua opção de presente',
     descricao: 'O que seu coração mandar. (Fale com os noivos)',
   },
@@ -178,7 +153,7 @@ export default function Home() {
           {/* Foto Grande */}
           <div className="hero-image">
             <img 
-              src={getAsset('assets/Imagem-0.jpeg')} 
+              src={getAsset('/src/assets/Imagem-0.jpeg')} 
               alt="Alexandra & João"
             />
           </div>
@@ -208,18 +183,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* O Casal Section */}
-      <section id="casal" className="section casal-section">
-        <div className="container">
-          <h2 className="section-title font-playfair">O Casal</h2>
-          <div className="casal-content">
-            <p>texto</p>
-            <p>texto</p>
-            <p>texto</p>
-          </div>
-        </div>
-      </section>
-
       {/* Cerimônia Section */}
       <section id="cerimonia" className="section">
         <div className="container">
@@ -228,7 +191,7 @@ export default function Home() {
             <div className="cerimonia-card">
               <h3>Data e Hora</h3>
               <p>01 de maio de 2027</p>
-              <p>17h00</p>
+              <p>16h30</p>
             </div>
             <div className="cerimonia-card">
               <h3>📍 Local</h3>
@@ -243,11 +206,14 @@ export default function Home() {
       {/* Festa Section */}
       <section id="festa" className="section festa-section">
         <div className="container">
-          <h2 className="section-title font-playfair">Festa</h2>
-          <div className="festa-card">
-            <h3>Jantar de Recepção</h3>
-            <p><strong>Castelo Trevizzo</strong></p>
-            <p>local</p>
+          <h2 className="section-title font-playfair">Jantar</h2>
+          <div className='festa-grid'>
+            <div className="festa-card">
+              <h3>Jantar de Recepção </h3>
+              <p><strong>Castello Trevizzo</strong></p>
+              <p>Av. Manoel Ribas, 4289</p>
+              <p>Sta. Felicidade, Curitiba - PR, 822025-160</p>
+            </div>
           </div>
         </div>
       </section>
@@ -284,13 +250,13 @@ export default function Home() {
           <h2 className="section-title font-playfair">Galeria de Fotos</h2>
           <div className="galeria-grid">
             <div className="galeria-item">
-              <img src={getAsset('assets/Imagem-1.jpeg')} alt="Galeria 1" />
+              <img src={getAsset('/src/assets/Imagem-1.jpeg')} alt="Galeria 1" />
             </div>
             <div className="galeria-item">
-              <img src={getAsset('assets/Imagem-2.jpeg')} alt="Galeria 2" />
+              <img src={getAsset('/src/assets/Imagem-2.jpeg')} alt="Galeria 2" />
             </div>
             <div className="galeria-item">
-              <img src={getAsset('assets/Imagem-3.jpeg')} alt="Galeria 3" />
+              <img src={getAsset('/src/assets/Imagem-3.jpeg')} alt="Galeria 3" />
             </div>
           </div>
         </div>
