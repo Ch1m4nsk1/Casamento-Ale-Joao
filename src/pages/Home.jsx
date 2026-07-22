@@ -130,7 +130,6 @@ export default function Home() {
           <div className="nav-logo font-playfair">Alexandra & João</div>
           <ul className="nav-menu">
             <li><a href="#home">Home</a></li>
-            <li><a href="#casal">O Casal</a></li>
             <li><a href="#cerimonia">Cerimônia</a></li>
             <li><a href="#festa">Festa</a></li>
             <li><a href="#presentes">Presentes</a></li>
@@ -153,7 +152,7 @@ export default function Home() {
           {/* Foto Grande */}
           <div className="hero-image">
             <img 
-              src='https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-0.jpeg?raw=true'
+              src={getAsset('assets/Imagem-0.jpeg')} 
               alt="Alexandra & João"
             />
           </div>
@@ -250,13 +249,13 @@ export default function Home() {
           <h2 className="section-title font-playfair">Galeria de Fotos</h2>
           <div className="galeria-grid">
             <div className="galeria-item">
-              <img src='https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-1.jpeg?raw=true' alt="Galeria 1" />
+              <img src={getAsset('assets/Imagem-1.jpeg')} alt="Galeria 1" />
             </div>
             <div className="galeria-item">
-              <img src='https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-2.jpeg?raw=true' alt="Galeria 2" />
+              <img src={getAsset('assets/Imagem-2.jpeg')} alt="Galeria 2" />
             </div>
             <div className="galeria-item">
-              <img src='https://github.com/Ch1m4nsk1/Casamento-Ale-Joao/blob/main/src/assets/Imagem-3.jpeg?raw=true' alt="Galeria 3" />
+              <img src={getAsset('assets/Imagem-3.jpeg')} alt="Galeria 3" />
             </div>
           </div>
         </div>
