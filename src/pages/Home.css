@@ -202,36 +202,8 @@
 }
 
 /* Cerimônia Section */
-.cerimonia-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.cerimonia-card {
-  background: #FFF8E7;
-  padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid #E8E8E0;
-  text-align: center;
-}
-
-.cerimonia-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  color: #458064;
-}
-
-.cerimonia-card p {
-  color: #777;
-  margin-bottom: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  .cerimonia-grid {
-    grid-template-columns: 1fr;
-  }
+.cerimonia-section {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* Festa Section */
@@ -239,14 +211,8 @@
   background: rgba(255, 255, 255, 0.5);
 }
 
-.festa-card {
-  background: #FFF8E7;
-  padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid #E8E8E0;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #777;
+.festa-card h3:not(:first-child) {
+  margin-top: 2rem;
 }
 
 .festa-card h3 {
@@ -260,6 +226,20 @@
   margin: 0.5rem 0;
 }
 
+.festa-card {
+  background: #FFF8E7;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #E8E8E0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Presentes Section */
 .presentes-intro {
   text-align: center;
@@ -271,6 +251,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
+}
+
+.pix-image {
+  display: block;
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  margin: 1.5rem auto;
 }
 
 .presente-card {
@@ -407,6 +395,44 @@
   color: #999;
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.maps-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 18px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  border-radius: 8px;
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.maps-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 250px;
+  }
 }
 
 /* Animations */
